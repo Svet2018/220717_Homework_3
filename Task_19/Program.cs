@@ -3,18 +3,22 @@
 
 //Решение №1 задачи.
 
+/*
 
 System.Console.WriteLine("Введите число:");
-string word = Console.ReadLine();
-int wordLenght = word.Length;
-string wordReverse = "";
+int number = Convert.ToInt32(Console.ReadLine());
+var list = new LinkedList<char>();
+int num = number;
 
-for (int i = word.Length - 1; i >= 0; i--)
+while (num > 0)
 {
-    wordReverse += word[i];
-};
+    list.AddLast((char)('0' + num % 10));
+    num = num / 10;
+}
+int numberReverse = Convert.ToInt32(new string(list.ToArray()));
+//Console.WriteLine(numberReverse);
 
-if (wordReverse == word)
+if (number - numberReverse ==0)
 {
     System.Console.WriteLine("Введенное Вами число является палиндромом.");
 }
@@ -23,10 +27,13 @@ else
     System.Console.WriteLine("Введенное Вами число не является палиндромом.");
 };
 
+*/
+
 
 //Решение №2 задачи.
 
 /*
+
 System.Console.WriteLine("Введите число:");
 string word = Console.ReadLine();
 string startHalfWord;
@@ -60,6 +67,31 @@ else
 {
     System.Console.WriteLine("Введенное Вами число не является палиндромом.");
 };
+
 */
 
 
+// Решение №3 задачи 
+
+/*
+
+System.Console.WriteLine("Введите число:");
+string word = Console.ReadLine();
+int wordLenght = word.Length;
+string wordReverse = "";
+
+for (int i = word.Length - 1; i >= 0; i--)
+{
+    wordReverse += word[i];
+};
+
+if (wordReverse == word)
+{
+    System.Console.WriteLine("Введенное Вами число является палиндромом.");
+}
+else
+{
+    System.Console.WriteLine("Введенное Вами число не является палиндромом.");
+};
+
+*/
