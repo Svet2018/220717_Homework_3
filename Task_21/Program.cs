@@ -42,10 +42,3 @@ double resalt = SqResalt(SumResalt(Sq(x1, x2), Sq(y1, y2), Sq(z1, z2)));
 
 System.Console.WriteLine("Расстояние  между двумя точками в 3D пространстве равно: {0:F2}", resalt);
 
-
-/*
-
-double a = 4.5646743;
-Console.WriteLine("{0:F3}",a);
-Console.WriteLine("{0:F2}",a);
-*/
