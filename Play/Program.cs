@@ -16,7 +16,6 @@ while (round > 0)
     string numPlayer =(Console.ReadLine());
 
     Random rnd = new Random();
-    //int numPc = rnd.Next(1, 4);
     string numPc = Convert.ToString(rnd.Next(1, 4));
     
     if (numPlayer != numPc)
